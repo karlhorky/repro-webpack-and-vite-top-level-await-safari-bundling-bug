@@ -4,7 +4,7 @@ export default defineConfig({
   base: './',
   build: {
     outDir: 'dist-vite',
-    emptyOutDir: true,
+    emptyOutDir: false,
     lib: {
       entry: 'module-entry.js',
       formats: ['es'],
@@ -12,6 +12,9 @@ export default defineConfig({
     },
     rollupOptions: {
       output: {
+        // Comment the next line in to work around the Safari top-level await bug
+        // inlineDynamicImports: true,
+
         chunkFileNames: 'module-[name].js',
         assetFileNames: '[name][extname]',
       },

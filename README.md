@@ -8,3 +8,4 @@ Vite (breaks)
 
 <img width="1476" height="326" alt="Screenshot 2025-10-27 at 14 24 02" src="https://github.com/user-attachments/assets/4194d428-8a9e-473c-96fe-0c992b1c19f5" />
 
+Vite with `rollupOptions.inlineDynamicImports.output = true` (works)
