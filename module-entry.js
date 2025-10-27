@@ -1,11 +1,10 @@
-const [{ utils }, { common }] = await Promise.all([
-  import('./module-utils.js'),
-  import('./module-common.js'),
-]);
+const moduleCommonPromise = import('./module-common.js');
+const moduleUtilsPromise = import('./module-utils.js');
 
 const resultEl = document.querySelector('.result');
-if (resultEl) {
-  resultEl.textContent = `Finished: utils=${utils}, common=${common}`;
+try {
+  await moduleCommonPromise;
+  resultEl.textContent = 'It worked';
+} catch (error) {
+  resultEl.textContent = String(error);
 }
-
-console.log('entry', { common, utils });

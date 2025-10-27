@@ -4,11 +4,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "webpack --mode=production",
+    "build": "pnpm build:webpack && pnpm build:vite",
+    "build:webpack": "webpack --mode=production",
+    "build:vite": "vite build --config vite.config.js",
+    "dev:vite": "vite --config vite.config.js",
+    "preview:vite": "vite preview --config vite.config.js",
     "start": "serve ."
   },
   "devDependencies": {
     "serve": "14.2.5",
+    "vite": "7.1.11",
     "webpack": "5.102.1",
     "webpack-cli": "6.0.1"
   }

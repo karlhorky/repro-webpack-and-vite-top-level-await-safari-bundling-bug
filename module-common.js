@@ -1,3 +1,3 @@
 const { utils } = await import('./module-utils.js');
-export var common = utils;
+export const common = utils;
 console.log('common', { utils });
