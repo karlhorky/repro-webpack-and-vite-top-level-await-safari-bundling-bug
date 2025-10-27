@@ -1,0 +1,15 @@
+{
+  "name": "repro-webpack-top-level-await-safari-bundling-bug",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "14.2.5",
+    "webpack": "5.102.1",
+    "webpack-cli": "6.0.1"
+  }
+}
