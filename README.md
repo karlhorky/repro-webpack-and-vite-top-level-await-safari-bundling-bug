@@ -1,4 +1,4 @@
-Reproduction for bundler workarounds for top-level await Safari bug described by @jakearchibald  https://x.com/karlhorky/status/1982785268265460019
+Reproduction for bundler workarounds for top-level await Safari bug described by [@jakearchibald](https://github.com/jakearchibald)  https://x.com/karlhorky/status/1982785268265460019
 
 [webpack](https://repro-webpack-and-vite-top-level-await-safar.vercel.app/index.html) (works)
 
